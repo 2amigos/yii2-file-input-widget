@@ -1,18 +1,19 @@
 <?php
- /**
- * 
- * FileInputAsset.php
- *
- * Date: 07/01/14
- * Time: 20:22
- * @author Antonio Ramirez <amigo.cobos@gmail.com>
- * @link http://www.ramirezcobos.com/
- * @link http://www.2amigos.us/
+/**
+ * @copyright Copyright (c) 2013 2amigOS! Consulting Group LLC
+ * @link http://2amigos.us
+ * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 namespace dosamigos\yii2\widgets;
 
 use yii\web\AssetBundle;
 
+/**
+ * @author Antonio Ramirez <amigo.cobos@gmail.com>
+ * @link http://www.ramirezcobos.com/
+ * @link http://www.2amigos.us/
+ * @package dosamigos\yii2\widgets
+ */
 class FileInputAsset extends AssetBundle
 {
 	public $js = [
