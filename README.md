@@ -32,6 +32,8 @@ use dosamigos\yii2\widgets\FileInput;
 <?=FileInput::widget([
     'model' => $model,
     'attribute' => 'image', // image is the attribute
+    // using STYLE_IMAGE allows me to display an image. Cool to display previsouly
+    // uploaded images
     'thumbnail' => $model->getAvatarImage(),
     'style' => FileInput::STYLE_IMAGE
 ]);?>
