@@ -1,7 +1,7 @@
 FileInput Widget for Yii2
 ==============================
 
-Renders a [Jasny File Input Bootstrap]() widget.
+Renders a [Jasny File Input Bootstrap](http://jasny.github.io/bootstrap/javascript/#fileinput) widget.
 
 Installation
 ------------
