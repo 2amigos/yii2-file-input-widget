@@ -17,7 +17,7 @@ php composer.phar require "2amigos/yii2-file-input-widget" "1.0.*"
 or add
 
 ```json
-"2amigos/yii2-fileInput-widget" : "1.0.*"
+"2amigos/yii2-file-input-widget" : "1.0.*"
 ```
 
 to the require section of your application's `composer.json` file.
