@@ -32,7 +32,7 @@ use dosamigos\widgets\FileInput;
 <?=FileInput::widget([
     'model' => $model,
     'attribute' => 'image', // image is the attribute
-    // using STYLE_IMAGE allows me to display an image. Cool to display previsouly
+    // using STYLE_IMAGE allows me to display an image. Cool to display previously
     // uploaded images
     'thumbnail' => $model->getAvatarImage(),
     'style' => FileInput::STYLE_IMAGE
