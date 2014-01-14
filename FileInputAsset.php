@@ -16,6 +16,8 @@ use yii\web\AssetBundle;
  */
 class FileInputAsset extends AssetBundle
 {
+	public $sourcePath = '@vendor/2amigos/yii2-file-input-widget/assets';
+
 	public $js = [
 		'js/fileinput.js'
 	];
@@ -27,11 +29,5 @@ class FileInputAsset extends AssetBundle
 	public $depends = [
 		'yii\bootstrap\BootstrapPluginAsset'
 	];
-
-	public function init()
-	{
-		$this->sourcePath = dirname(__FILE__) . '/assets';
-		parent::init();
-	}
 
 }
