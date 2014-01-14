@@ -27,7 +27,7 @@ Usage
 Using a model:
 
 ```
-use dosamigos\yii2\widgets\FileInput;
+use dosamigos\widgets\FileInput;
 
 <?=FileInput::widget([
     'model' => $model,
