@@ -1,7 +1,7 @@
 {
     "name": "2amigos/yii2-file-input-widget",
     "description": "Jasny File Input Bootstrap widget for Yii2.",
-    "keywords": ["extension", "widget", "file input", "yii"],
+    "keywords": ["yii", "extension", "widget", "file input"],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "authors": [
