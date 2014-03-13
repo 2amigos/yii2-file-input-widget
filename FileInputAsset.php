@@ -16,18 +16,16 @@ use yii\web\AssetBundle;
  */
 class FileInputAsset extends AssetBundle
 {
-	public $sourcePath = '@vendor/2amigos/yii2-file-input-widget/assets';
-
-	public $js = [
-		'js/fileinput.js'
-	];
-
-	public $css = [
-		'css/fileinput.css'
-	];
+	public $sourcePath = '@vendor/jasny/bootstrap/dist';
 
 	public $depends = [
 		'yii\bootstrap\BootstrapPluginAsset'
 	];
 
+	public function init()
+	{
+		$this->js = YII_DEBUG ? ['js/jasny-bootstrap.js'] : ['js/jasny-bootstrap.min.js'];
+
+		$this->css = YII_DEBUG ? ['css/jasny-bootstrap.css'] : ['css/jasny-bootstrap.min.css'];
+	}
 }
