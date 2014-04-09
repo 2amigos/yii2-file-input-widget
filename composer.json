@@ -13,7 +13,8 @@
     ],
     "require": {
         "yiisoft/yii2": "*",
-		"jasny/bootstrap": "v3.1.0"
+		"jasny/bootstrap": "v3.1.0",
+        "kartik-v/bootstrap-fileinput": "dev-master"
     },
     "autoload": {
         "psr-4": {

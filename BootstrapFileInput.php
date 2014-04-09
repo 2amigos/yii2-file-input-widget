@@ -6,10 +6,8 @@
  */
 namespace dosamigos\fileinput;
 
-use yii\base\InvalidConfigException;
 use yii\helpers\Html;
 use yii\helpers\Json;
-use yii\web\View;
 use yii\widgets\InputWidget;
 use Yii;
 
