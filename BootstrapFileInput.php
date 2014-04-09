@@ -1,0 +1,78 @@
+<?php
+/**
+ * @copyright Copyright (c) 2013 2amigOS! Consulting Group LLC
+ * @link http://2amigos.us
+ * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
+ */
+namespace dosamigos\fileinput;
+
+use yii\base\InvalidConfigException;
+use yii\helpers\Html;
+use yii\helpers\Json;
+use yii\web\View;
+use yii\widgets\InputWidget;
+use Yii;
+
+/**
+ * BootstrapFileInput widget renders the improved and amazing plugin version from Krajee. It supports multiple file
+ * preview with both images and/or text types.
+ *
+ *
+ * @author Antonio Ramirez <amigo.cobos@gmail.com>
+ * @link http://www.ramirezcobos.com/
+ * @link http://www.2amigos.us/
+ * @package dosamigos\fileinput
+ */
+class BootstrapFileInput extends InputWidget
+{
+    /**
+     * @var array the options for the Bootstrap File Input plugin. Default options have exporting enabled.
+     * Please refer to the Bootstrap File Input plugin Web page for possible options.
+     * @see http://plugins.krajee.com/file-input#options
+     */
+    public $clientOptions = [];
+    /**
+     * @var array the event handlers for the underlying Jasny file input JS plugin.
+     * Please refer to the [Bootstrap File Input](http://plugins.krajee.com/file-input#events) plugin
+     * Web page for possible events.
+     */
+    public $clientEvents = [];
+
+
+    /**
+     * @inheritdoc
+     */
+    public function run()
+    {
+        if ($this->hasModel()) {
+            echo Html::activeFileInput($this->model, $this->attribute, $this->options);
+        } else {
+            echo Html::fileInput($this->name, $this->value, $this->options);
+        }
+        $this->registerClientScript();
+    }
+
+    /**
+     * Registers Bootstrap File Input plugin
+     */
+    public function registerClientScript()
+    {
+        $view = $this->getView();
+
+        BootstrapFileInputAsset::register($view);
+
+        $id = $this->options['id'];
+
+        $options = !empty($this->clientOptions) ? Json::encode($this->clientOptions) : '';
+
+        $js[] = ";jQuery('#$id').fileinput({$options});";
+
+        if (!empty($this->clientEvents)) {
+            $js = [];
+            foreach ($this->clientEvents as $event => $handler) {
+                $js[] = ";jQuery('#$id').on('$event', $handler);";
+            }
+        }
+        $view->registerJs(implode("\n", $js));
+    }
+} 

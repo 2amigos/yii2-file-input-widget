@@ -39,6 +39,26 @@ use dosamigos\fileinput\FileInput;
 ]);?>
 ```
 
+Update
+------
+We have included the [improved and multiple file upload version from Krajee](http://plugins.krajee.com/file-input).
+
+```
+
+<?= $form->field($model, 'code')->widget(\dosamigos\fileinput\BootstrapFileInput::className(), [
+    'options' => ['accept' => 'image/*', 'multiple' => true],
+    'clientOptions' => [
+        'previewFileType' => 'text',
+        'browseClass' => 'btn btn-success',
+        'uploadClass' => 'btn btn-info',
+        'removeClass' => 'btn btn-danger',
+        'removeIcon' => '<i class="glyphicon glyphicon-trash"></i> '
+    ]
+]);?>
+
+```
+
+
 > [![2amigOS!](http://www.gravatar.com/avatar/55363394d72945ff7ed312556ec041e0.png)](http://www.2amigos.us)    
 <i>Web development has never been so fun!</i>
 [www.2amigos.us](http://www.2amigos.us)

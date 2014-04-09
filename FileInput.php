@@ -85,7 +85,7 @@ class FileInput extends InputWidget
 			$field = Html::fileInput($this->name, $this->value, $this->options);
 		}
 		echo $this->renderTemplate($field);
-		$this->registerPlugin();
+		$this->registerClientScript();
 	}
 
 	/**
@@ -94,7 +94,7 @@ class FileInput extends InputWidget
 	 * @return string
 	 * @throws \yii\base\InvalidConfigException
 	 */
-	protected function renderTemplate($field)
+	public function renderTemplate($field)
 	{
 		$params = ['field' => $field];
 		switch($this->style)
@@ -129,7 +129,7 @@ class FileInput extends InputWidget
 	/**
 	 * Registers Jasny File Input Bootstrap plugin and the related events
 	 */
-	protected function registerPlugin()
+	public function registerClientScript()
 	{
 		$view = $this->getView();
 
