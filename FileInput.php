@@ -116,6 +116,7 @@ class FileInput extends InputWidget
 					);
 				}
 				$view = $this->customView;
+				$params['thumbnail'] = $this->thumbnail;
 				break;
 			default:
 				throw new InvalidConfigException(
