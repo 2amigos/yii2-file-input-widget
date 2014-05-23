@@ -66,7 +66,6 @@ class BootstrapFileInput extends InputWidget
         $js[] = ";jQuery('#$id').fileinput({$options});";
 
         if (!empty($this->clientEvents)) {
-            $js = [];
             foreach ($this->clientEvents as $event => $handler) {
                 $js[] = ";jQuery('#$id').on('$event', $handler);";
             }
