@@ -21,7 +21,6 @@ class BootstrapFileInputTest extends \PHPUnit_Framework_TestCase
         $view = Yii::$app->getView();
         $content = $view->render('//bootstrap-file-input', ['model' => $model]);
         $actual = $view->render('//layouts/main', ['content' => $content]);
-        file_put_contents(__DIR__ . '/data/test-bootstrap-file-input.bin', $actual);
         $expected = file_get_contents(__DIR__ . '/data/test-bootstrap-file-input.bin');
         $this->assertEquals($expected, $actual);
     }
