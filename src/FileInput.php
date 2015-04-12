@@ -1,9 +1,10 @@
 <?php
 /**
- * @copyright Copyright (c) 2013 2amigOS! Consulting Group LLC
- * @link http://2amigos.us
- * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
+ * @link https://github.com/2amigos/yii2-file-input-widget
+ * @copyright Copyright (c) 2013-2015 2amigOS! Consulting Group LLC
+ * @license http://opensource.org/licenses/BSD-3-Clause
  */
+
 namespace dosamigos\fileinput;
 
 use yii\base\InvalidConfigException;
@@ -14,11 +15,7 @@ use Yii;
 /**
  * FileInput renders a Jasny File Input Bootstrap plugin.
  *
- * @see http://jasny.github.io/bootstrap/javascript/#fileinput
- * @author Antonio Ramirez <amigo.cobos@gmail.com>
- * @link http://www.ramirezcobos.com/
- * @link http://www.2amigos.us/
- * @package dosamigos\widgets
+ * @author Alexander Kochetov <creocoder@gmail.com>
  */
 class FileInput extends InputWidget
 {
@@ -62,15 +59,23 @@ class FileInput extends InputWidget
 	 */
 	public $clientEvents = [];
 
-
 	/**
 	 * Initializes the widget.
 	 */
 	public function init()
 	{
 		if ($this->style === null) {
-			$this->style = static::STYLE_INPUT;
+			$this->style = self::STYLE_INPUT;
 		}
+
+        if (!in_array($this->style, [self::STYLE_INPUT, self::STYLE_BUTTON, self::STYLE_IMAGE, self::STYLE_CUSTOM])) {
+            throw new InvalidConfigException('Unrecognized "FileInput::$style" format. It should be of "FileInput::STYLE_INPUT", "FileInput::STYLE_BUTTON", "FileInput::STYLE_IMAGE" or "FileInput::STYLE_CUSTOM" only.');
+        }
+
+        if ($this->style === self::STYLE_CUSTOM && $this->customView === null) {
+            throw new InvalidConfigException('"FileInput::$customView" must be set if "FileInput::STYLE_CUSTOM" is used');
+        }
+
 		parent::init();
 	}
 
@@ -99,30 +104,20 @@ class FileInput extends InputWidget
 		$params = ['field' => $field];
 		switch($this->style)
 		{
-			case static::STYLE_INPUT:
+			case self::STYLE_INPUT:
 				$view = $this->getViewPath() . '/inputField.php';
 				break;
-			case static::STYLE_BUTTON:
+			case self::STYLE_BUTTON:
 				$view = $this->getViewPath() . '/buttonField.php';
 				break;
-			case static::STYLE_IMAGE:
+			case self::STYLE_IMAGE:
 				$view = $this->getViewPath() . '/imageField.php';
 				$params['thumbnail'] = $this->thumbnail;
 				break;
-			case static::STYLE_CUSTOM:
-				if($this->customView === null) {
-					throw new InvalidConfigException(
-						'"FileInput::$customView" must be set if "FileInput::STYLE_CUSTOM" is used'
-					);
-				}
+			case self::STYLE_CUSTOM:
 				$view = $this->customView;
 				$params['thumbnail'] = $this->thumbnail;
 				break;
-			default:
-				throw new InvalidConfigException(
-					'Unrecognized "FileInput::$style" format. ' .
-					'It should be of "FileInput::STYLE_INPUT", "FileInput::STYLE_BUTTON", ' .
-					'"FileInput::STYLE_IMAGE" or "FileInput only.');
 		}
 		return $this->getView()->renderFile(Yii::getAlias($view), $params);
 	}

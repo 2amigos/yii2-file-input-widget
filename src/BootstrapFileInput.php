@@ -1,9 +1,10 @@
 <?php
 /**
- * @copyright Copyright (c) 2013 2amigOS! Consulting Group LLC
- * @link http://2amigos.us
- * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
+ * @link https://github.com/2amigos/yii2-file-input-widget
+ * @copyright Copyright (c) 2013-2015 2amigOS! Consulting Group LLC
+ * @license http://opensource.org/licenses/BSD-3-Clause
  */
+
 namespace dosamigos\fileinput;
 
 use yii\helpers\Html;
@@ -15,11 +16,7 @@ use Yii;
  * BootstrapFileInput widget renders the improved and amazing plugin version from Krajee. It supports multiple file
  * preview with both images and/or text types.
  *
- *
- * @author Antonio Ramirez <amigo.cobos@gmail.com>
- * @link http://www.ramirezcobos.com/
- * @link http://www.2amigos.us/
- * @package dosamigos\fileinput
+ * @author Alexander Kochetov <creocoder@gmail.com>
  */
 class BootstrapFileInput extends InputWidget
 {
@@ -72,4 +69,4 @@ class BootstrapFileInput extends InputWidget
         }
         $view->registerJs(implode("\n", $js));
     }
-} 
+}
