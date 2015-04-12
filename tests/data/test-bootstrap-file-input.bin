@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href="/1/css/bootstrap.css" rel="stylesheet">
+<link href="/0/css/fileinput.css" rel="stylesheet"></head>
+<body>
+
+<input type="hidden" name="Model[test]" value=""><input type="file" id="model-test" name="Model[test]">
+<input type="file" id="w0" name="test">
+<input type="file" id="w1" name="test"><script src="/2/jquery.js"></script>
+<script src="/1/js/bootstrap.js"></script>
+<script src="/0/js/fileinput.js"></script>
+<script type="text/javascript">jQuery(document).ready(function () {
+;jQuery('#model-test').fileinput();
+;jQuery('#w0').fileinput();
+;jQuery('#w1').fileinput();
+;jQuery('#w1').on('test', function () { });
+});</script></body>
+</html>
