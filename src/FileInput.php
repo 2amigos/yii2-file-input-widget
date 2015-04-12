@@ -1,9 +1,10 @@
 <?php
 /**
- * @copyright Copyright (c) 2013 2amigOS! Consulting Group LLC
- * @link http://2amigos.us
- * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
+ * @link https://github.com/2amigos/yii2-file-input-widget
+ * @copyright Copyright (c) 2013-2015 2amigOS! Consulting Group LLC
+ * @license http://opensource.org/licenses/BSD-3-Clause
  */
+
 namespace dosamigos\fileinput;
 
 use yii\base\InvalidConfigException;
@@ -14,11 +15,7 @@ use Yii;
 /**
  * FileInput renders a Jasny File Input Bootstrap plugin.
  *
- * @see http://jasny.github.io/bootstrap/javascript/#fileinput
- * @author Antonio Ramirez <amigo.cobos@gmail.com>
- * @link http://www.ramirezcobos.com/
- * @link http://www.2amigos.us/
- * @package dosamigos\widgets
+ * @author Alexander Kochetov <creocoder@gmail.com>
  */
 class FileInput extends InputWidget
 {
