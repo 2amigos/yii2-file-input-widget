@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ffaf419180533a35019082de0ba9ae95",
+    "hash": "6e1b7c8b1f9fe5421874f90748f8fb01",
     "packages": [
         {
             "name": "bower-asset/jquery",
@@ -305,16 +305,16 @@
         },
         {
             "name": "kartik-v/bootstrap-fileinput",
-            "version": "dev-master",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
-                "reference": "b84ed2e00acc078fecfcf397d4f0b21eee4a616d"
+                "reference": "dead0e4302567e87e66296290b62da936ec6793e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/b84ed2e00acc078fecfcf397d4f0b21eee4a616d",
-                "reference": "b84ed2e00acc078fecfcf397d4f0b21eee4a616d",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/dead0e4302567e87e66296290b62da936ec6793e",
+                "reference": "dead0e4302567e87e66296290b62da936ec6793e",
                 "shasum": ""
             },
             "type": "library",
@@ -349,7 +349,7 @@
                 "progress",
                 "upload"
             ],
-            "time": "2015-04-12 17:18:22"
+            "time": "2015-03-31 07:23:22"
         },
         {
             "name": "twitter/bootstrap",
@@ -1499,9 +1499,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "kartik-v/bootstrap-fileinput": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
