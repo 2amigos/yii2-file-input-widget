@@ -7,7 +7,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/2amigos/yii2-file-input-widget.svg?style=flat-square)](https://scrutinizer-ci.com/g/2amigos/yii2-file-input-widget)
 [![Total Downloads](https://img.shields.io/packagist/dt/2amigos/yii2-file-input-widget.svg?style=flat-square)](https://packagist.org/packages/2amigos/yii2-file-input-widget)
 
-Renders a [Jasny File Input Bootstrap](http://jasny.github.io/bootstrap/javascript/#fileinput) widget.
+This widget allows to make use of the great [File Input Plugin](http://jasny.github.io/bootstrap/javascript/#fileinput) that [Arnold Daniels](https://twitter.com/ArnoldDaniels) developed to enhance our Bootstrap experience. 
 
 ## Installation
 
