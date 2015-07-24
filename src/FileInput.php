@@ -69,11 +69,11 @@ class FileInput extends InputWidget
 		}
 
         if (!in_array($this->style, [self::STYLE_INPUT, self::STYLE_BUTTON, self::STYLE_IMAGE, self::STYLE_CUSTOM])) {
-            throw new InvalidConfigException('Unrecognized "FileInput::$style" format. It should be of "FileInput::STYLE_INPUT", "FileInput::STYLE_BUTTON", "FileInput::STYLE_IMAGE" or "FileInput::STYLE_CUSTOM" only.');
+            throw new InvalidConfigException(\Yii::t('file-input', 'Unrecognized "FileInput::$style" format. It should be of "FileInput::STYLE_INPUT", "FileInput::STYLE_BUTTON", "FileInput::STYLE_IMAGE" or "FileInput::STYLE_CUSTOM" only.'));
         }
 
         if ($this->style === self::STYLE_CUSTOM && $this->customView === null) {
-            throw new InvalidConfigException('"FileInput::$customView" must be set if "FileInput::STYLE_CUSTOM" is used');
+            throw new InvalidConfigException(\Yii::t('file-input', '"FileInput::$customView" must be set if "FileInput::STYLE_CUSTOM" is used'));
         }
 
 		parent::init();
