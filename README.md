@@ -7,7 +7,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/2amigos/yii2-file-input-widget.svg?style=flat-square)](https://scrutinizer-ci.com/g/2amigos/yii2-file-input-widget)
 [![Total Downloads](https://img.shields.io/packagist/dt/2amigos/yii2-file-input-widget.svg?style=flat-square)](https://packagist.org/packages/2amigos/yii2-file-input-widget)
 
-This widget allows to make use of the great [File Input Plugin](http://jasny.github.io/bootstrap/javascript/#fileinput) that [Arnold Daniels](https://twitter.com/ArnoldDaniels) developed to enhance our Bootstrap experience. 
+This widget allows to make use of the great [File Input Plugin](http://jasny.github.io/bootstrap/javascript/#fileinput) that [Arnold Daniels](https://twitter.com/ArnoldDaniels) developed to enhance our Bootstrap experience.
 
 ## Installation
 
@@ -26,6 +26,18 @@ or add
 ```
 
 to the `require` section of your `composer.json` file.
+
+Add to config to components section
+```php
+'i18n' => [
+      'translations' => [
+          'file-input*' => [
+              'class' => 'yii\i18n\PhpMessageSource',
+              'basePath' => dirname(__FILE__).'/../vendor/2amigos/yii2-file-input-widget/src/messages/',
+          ],
+      ],
+  ],
+```
 
 ## Usage
 
