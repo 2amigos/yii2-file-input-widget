@@ -12,7 +12,10 @@ use yii\web\AssetBundle;
 /**
  * FileInputAsset
  *
- * @author Alexander Kochetov <creocoder@gmail.com>
+ * @author Antonio Ramirez <amigo.cobos@gmail.com>		
+ * @link http://www.ramirezcobos.com/		
+ * @link http://www.2amigos.us/		
+ * @package dosamigos\fileinput
  */
 class FileInputAsset extends AssetBundle
 {
