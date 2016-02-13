@@ -1,6 +1,7 @@
 <?php
 /**
  * @link https://github.com/2amigos/yii2-file-input-widget
+ *
  * @copyright Copyright (c) 2013-2015 2amigOS! Consulting Group LLC
  * @license http://opensource.org/licenses/BSD-3-Clause
  */
@@ -12,7 +13,7 @@ use tests\models\Model;
 use Yii;
 
 /**
- * FileInputTest
+ * FileInputTest.
  */
 class FileInputTest extends \PHPUnit_Framework_TestCase
 {

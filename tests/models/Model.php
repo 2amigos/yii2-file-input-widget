@@ -1,6 +1,7 @@
 <?php
 /**
  * @link https://github.com/2amigos/yii2-file-input-widget
+ *
  * @copyright Copyright (c) 2013-2015 2amigOS! Consulting Group LLC
  * @license http://opensource.org/licenses/BSD-3-Clause
  */
@@ -8,7 +9,7 @@
 namespace tests\models;
 
 /**
- * Model
+ * Model.
  */
 class Model extends \yii\base\Model
 {

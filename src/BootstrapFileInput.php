@@ -1,6 +1,7 @@
 <?php
 /**
  * @link https://github.com/2amigos/yii2-file-input-widget
+ *
  * @copyright Copyright (c) 2013-2015 2amigOS! Consulting Group LLC
  * @license http://opensource.org/licenses/BSD-3-Clause
  */
@@ -10,22 +11,22 @@ namespace dosamigos\fileinput;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\widgets\InputWidget;
-use Yii;
 
 /**
  * BootstrapFileInput widget renders the improved and amazing plugin version from Krajee. It supports multiple file
  * preview with both images and/or text types.
  *
- * @author Antonio Ramirez <amigo.cobos@gmail.com>		
- * @link http://www.ramirezcobos.com/		
- * @link http://www.2amigos.us/		
- * @package dosamigos\fileinput
+ * @author Antonio Ramirez <amigo.cobos@gmail.com>
+ *
+ * @link http://www.ramirezcobos.com/
+ * @link http://www.2amigos.us/
  */
 class BootstrapFileInput extends InputWidget
 {
     /**
      * @var array the options for the Bootstrap File Input plugin. Default options have exporting enabled.
      * Please refer to the Bootstrap File Input plugin Web page for possible options.
+     *
      * @see http://plugins.krajee.com/file-input#options
      */
     public $clientOptions = [];
@@ -36,9 +37,8 @@ class BootstrapFileInput extends InputWidget
      */
     public $clientEvents = [];
 
-
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function run()
     {
@@ -51,7 +51,7 @@ class BootstrapFileInput extends InputWidget
     }
 
     /**
-     * Registers Bootstrap File Input plugin
+     * Registers Bootstrap File Input plugin.
      */
     public function registerClientScript()
     {
