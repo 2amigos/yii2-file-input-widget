@@ -27,6 +27,22 @@ or add
 
 to the `require` section of your `composer.json` file.
 
+
+Then, Add to your configuration file, the following to your `components` section:
+
+```php
+'i18n' => [
+      'translations' => [
+          'file-input*' => [
+              'class' => 'yii\i18n\PhpMessageSource',
+              'basePath' => dirname(__FILE__).'/../vendor/2amigos/yii2-file-input-widget/src/messages/',
+          ],
+      ],
+  ],
+```
+
+If a translation is missing, feel free to make a PR and I will merge it. 
+
 ## Usage
 
 Using a model:

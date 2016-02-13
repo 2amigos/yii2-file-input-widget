@@ -13,6 +13,14 @@ new \yii\console\Application([
     'basePath' => __DIR__,
     'vendorPath' => __DIR__ . '/../vendor',
     'components' => [
+        'i18n' => [
+            'translations' => [
+                'file-input*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@vendor/2amigos/yii2-file-input-widget/src/messages/',
+                ],
+            ],
+        ],
         'assetManager' => [
             'class' => 'tests\AssetManager',
             'basePath' => '@tests/assets',

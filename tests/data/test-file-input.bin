@@ -15,7 +15,8 @@
             <span class="fileinput-new">Select file</span>
             <span class="fileinput-exists">Change</span>
             <input type="hidden" name="Model[test]" value=""><input type="file" id="model-test" name="Model[test]">        </span>
-        <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+        <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">
+            Remove        </a>
     </div>
 </div>
 
@@ -28,7 +29,8 @@
             <span class="fileinput-new">Select file</span>
             <span class="fileinput-exists">Change</span>
             <input type="file" id="w2" name="test">        </span>
-        <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+        <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">
+            Remove        </a>
     </div>
 </div>
 
@@ -41,13 +43,15 @@
             <span class="fileinput-new">Select file</span>
             <span class="fileinput-exists">Change</span>
             <input type="file" id="w3" name="test">        </span>
-        <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+        <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">
+            Remove        </a>
     </div>
 </div>
 
 <div class="fileinput fileinput-new" data-provides="fileinput">
     <span class="btn btn-default btn-file">
-        <span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span>
+        <span class="fileinput-new">Select file</span>
+        <span class="fileinput-exists">Change</span>
         <input type="file" id="w4" name="test">    </span>
     <span class="fileinput-filename"></span>
     <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;</a>
@@ -62,7 +66,8 @@
             <span class="fileinput-new">Select image</span>
             <span class="fileinput-exists">Change</span>
             <input type="file" id="w5" name="test">        </span>
-        <a href="#" class="btn btn-default btn-block fileinput-exists" data-dismiss="fileinput">Remove</a>
+        <a href="#" class="btn btn-default btn-block fileinput-exists" data-dismiss="fileinput">
+            Remove        </a>
     </div>
 </div>
 
@@ -76,7 +81,8 @@
             <span class="fileinput-new">Select file</span>
             <span class="fileinput-exists">Change</span>
             <input type="file" id="w7" name="test">        </span>
-        <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+        <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">
+            Remove        </a>
     </div>
 </div>
 <script src="/2/jquery.js"></script>
