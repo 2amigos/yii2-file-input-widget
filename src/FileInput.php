@@ -15,7 +15,10 @@ use Yii;
 /**
  * FileInput renders a Jasny File Input Bootstrap plugin.
  *
- * @author Alexander Kochetov <creocoder@gmail.com>
+ * @author Antonio Ramirez <amigo.cobos@gmail.com>		
+ * @link http://www.ramirezcobos.com/		
+ * @link http://www.2amigos.us/		
+ * @package dosamigos\fileinput
  */
 class FileInput extends InputWidget
 {
