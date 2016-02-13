@@ -16,7 +16,10 @@ use Yii;
  * BootstrapFileInput widget renders the improved and amazing plugin version from Krajee. It supports multiple file
  * preview with both images and/or text types.
  *
- * @author Alexander Kochetov <creocoder@gmail.com>
+ * @author Antonio Ramirez <amigo.cobos@gmail.com>		
+ * @link http://www.ramirezcobos.com/		
+ * @link http://www.2amigos.us/		
+ * @package dosamigos\fileinput
  */
 class BootstrapFileInput extends InputWidget
 {
