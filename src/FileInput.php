@@ -51,6 +51,11 @@ class FileInput extends InputWidget
      * - $thumbnail: If set the thumbnail to display previous selected image
      */
     public $customView;
+
+    /**
+     * @var array additional parameters passed to $customView
+     */
+    public $customParams = [];
     /**
      * @var string the thumbnail to be displayed if [[STYLE_CUSTOM]] or [[STYLE_IMAGE]] has been selected. Thumbnail
      * is used to display an image that was previously loaded.
@@ -123,6 +128,7 @@ class FileInput extends InputWidget
             case self::STYLE_CUSTOM:
                 $view = $this->customView;
                 $params['thumbnail'] = $this->thumbnail;
+                $params = array_merge($params, $this->customParams);
                 break;
         }
 
