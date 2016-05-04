@@ -17,8 +17,8 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
-    'Change' => '',
-    'Remove' => '',
-    'Select file' => '',
-    'Select image' => '',
+    'Change' => 'Alterar',
+    'Remove' => 'Remover',
+    'Select file' => 'Selecionar arquivo',
+    'Select image' => 'Selecionar imagem',
 ];
