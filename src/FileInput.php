@@ -88,6 +88,7 @@ class FileInput extends InputWidget
         \Yii::$app->i18n->translations['file-input*'] = [
             'class' => 'yii\i18n\PhpMessageSource',
             'basePath' => '@vendor/2amigos/yii2-file-input-widget/src/messages/',
+            'sourceLanguage' => 'en-US',
         ];
 
         parent::init();
