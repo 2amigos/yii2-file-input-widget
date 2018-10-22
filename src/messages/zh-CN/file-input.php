@@ -17,8 +17,8 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
-    'Change' => '',
-    'Remove' => '',
-    'Select file' => '',
-    'Select image' => '',
+    'Change' => '修改',
+    'Remove' => '删除',
+    'Select file' => '选择文件',
+    'Select image' => '选择图片',
 ];
