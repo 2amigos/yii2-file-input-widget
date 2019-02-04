@@ -20,14 +20,13 @@ use yii\web\AssetBundle;
  */
 class FileInputAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/jasny/bootstrap/dist';
+    public $sourcePath = '@vendor/2amigos/yii2-file-input-widget/src/assets';
+    
     public $css = [
-        'css/jasny-bootstrap.css',
+        'css/file-input-widget.css'
     ];
-    public $js = [
-        'js/jasny-bootstrap.js',
-    ];
+    
     public $depends = [
-        'yii\bootstrap\BootstrapPluginAsset',
+        'dosamigos\fileinput\JasnyBootstrapAsset',
     ];
 }
