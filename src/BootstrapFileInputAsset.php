@@ -28,6 +28,6 @@ class BootstrapFileInputAsset extends AssetBundle
         'js/fileinput.js',
     ];
     public $depends = [
-        'yii\bootstrap\BootstrapPluginAsset',
+        'yii\bootstrap4\BootstrapPluginAsset',
     ];
 }
