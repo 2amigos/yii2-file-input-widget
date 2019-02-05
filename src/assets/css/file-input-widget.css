@@ -21,3 +21,10 @@
     height: auto;
 }
 
+.fileinput.thumbnail-exists > .thumbnail {
+    width: auto !important;
+    height: auto !important;
+}
+
+
+

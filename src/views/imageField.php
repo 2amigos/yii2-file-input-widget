@@ -1,4 +1,4 @@
-<div class="fileinput fileinput-new" data-provides="fileinput">
+<div class="fileinput fileinput-new <?= !empty($thumbnail) ? 'thumbnail-exists' : '' ?>" data-provides="fileinput">
     <div class="fileinput-new thumbnail" style="width: 200px; height: 200px;">
         <?=$thumbnail;?>
     </div>
