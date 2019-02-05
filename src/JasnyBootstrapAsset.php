@@ -1,9 +1,4 @@
 <?php
-/**
- * Email: srdjan.drakul@2amigos.us
- * Date: 2/5/2019
- * Time: 00:04
- */
 
 namespace dosamigos\fileinput;
 
