@@ -24,7 +24,7 @@
     "require": {
         "yiisoft/yii2": "~2.0.0",
         "yiisoft/yii2-bootstrap4": "^1.0 | ^2.0",
-        "jasny/bootstrap": "~3.1.0",
+        "jasny/bootstrap": "~4.0.0",
         "kartik-v/bootstrap-fileinput": "~4.1.0"
     },
     "require-dev": {
