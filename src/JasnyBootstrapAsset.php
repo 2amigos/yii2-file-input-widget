@@ -6,16 +6,16 @@ use yii\web\AssetBundle;
 
 class JasnyBootstrapAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/jasny/bootstrap';
-    
+    public $sourcePath = '@vendor/jasny/bootstrap/dist';
+
     public $css = [
-        'scss/jasny-bootstrap.scss',
+        'css/jasny-bootstrap.css',
     ];
-    
+
     public $js = [
-        'js/fileinput.js',
+        'js/jasny-bootstrap.js',
     ];
-    
+
     public $depends = [
         'yii\bootstrap4\BootstrapPluginAsset',
     ];
